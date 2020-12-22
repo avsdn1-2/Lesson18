@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block navigation %}
+
+{% endblock %}
+
+{% block title %}Hello PageController!{% endblock %}
+
+{% block body %}
+      {% include 'components/navigation.html.twig' %}
+      {{ parent() }}
+      <!-- Main -->
+      <div id="main">
+            {% block content %} {% endblock %}
+      </div>
+      <!-- /Main -->
+{% endblock %}
